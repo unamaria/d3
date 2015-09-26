@@ -8,7 +8,7 @@ var getStats = function(event) {
 	$.ajax({
 		url: repos_url,
 		data: "",
-		success: [getLanguages, displayStats],
+		success: getLanguages,
 		error: handleError,
 		dataType: "json"
 	});
@@ -38,15 +38,11 @@ function updateStats(response) {
     	}
     }
 	}
-	console.log("languages from updateStats: ", languages["CSS"])
 }
 
 function displayStats() {
-	console.log("displayStats languages: ", languages)
 	var total_bytes = 0;
-	console.log("HOLA", languages["CSS"]);
 	for (var language in languages) {
-		console.log("HALLO");
 		if (languages.hasOwnProperty(language)) {
 			total_bytes += languages[language];
 		}
