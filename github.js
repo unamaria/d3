@@ -38,6 +38,7 @@ function updateStats(response) {
     	}
     }
 	}
+	console.log(languages)
 }
 
 function displayStats() {
