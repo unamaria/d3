@@ -3,28 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>D3 sandbox</title>
-	<style>
-
-		text {
-		  font: 10px sans-serif;
-		}
-
-</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<h1>GitHub stats</h1>
 	
 	<form>
-		<label for="username">GitHub username: </label>
-		<input type="text" id="username" name="username">
+		<input type="text" id="username" name="username" placeholder="GitHub username">
 		<input type="submit" value="Get stats">
 	</form>
 	
-	<div></div>
+	<div id="graph"></div>
 	
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 	<script src="github.js"></script>
-	<script src="d3.js"></script>
+	<script src="jeff.js"></script>
 </body>
 </html>

@@ -1,0 +1,67 @@
+body {
+  background-color: white;
+  font-family: sans-serif;
+	max-width: 80em;
+	margin: 0 auto;
+	font-size: 100%
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  
+}
+
+.tooltip {
+    position: absolute;
+    /* width: 200px; */
+    /* height: 202px; */
+    pointer-events: none;
+    background: #990000;
+    overflow: hidden;
+    color: white;
+    padding: 10px;
+    border-radius: 12px;
+    border: #f8b300 solid 4px;
+}
+h1{
+	font-family: serif;
+	text-align: center;
+	font-size: 100px;
+	font-weight: 100;
+}
+
+h1 span{
+	color:#990000;
+}
+
+#graph {
+	padding: 3em;
+}
+
+form {
+	text-align: center;
+}
+
+input {
+	margin: 0;
+	padding: 0;
+	height: 3em;
+}
+
+.label{
+	fill:white;
+	font-size: 1em;
+}
+.tick text{
+	fill:#990000;
+	font-size: 1.5em;
+}
+.legend text{
+	fill:#990000;
+}
